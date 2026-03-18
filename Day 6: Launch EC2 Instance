@@ -1,0 +1,26 @@
+# Exo:
+
+The Nautilus DevOps team is strategizing the migration of a portion of their infrastructure to the AWS cloud. 
+Recognizing the scale of this undertaking, they have opted to approach the migration in incremental steps rather than as a single massive transition. 
+To achieve this, they have segmented large tasks into smaller, more manageable units.
+
+## Requirements:
+For this task, create an EC2 instance with following requirements:
+1. The name of the instance must be _devops-ec2_.
+2. You can use the _Amazon Linux_ AMI to launch this instance.
+3. The Instance type must be _t2.micro_.
+4. Create a new RSA key pair named _devops-kp_.
+5. Attach the default (available by default) security group.
+
+# Solution:
+1- Open the Amazon EC2 console
+2- From the EC2 console dashboard, in the Launch instance pane, choose Launch instance.
+3- Under Name and tags, for Name, enter the given name for your instance:
+    The name of the instance must be `devops-ec2`
+4- Under Application and OS Images, choose the right AMI to launch this instance:
+    You can use the `Amazon Linux_ AMI`
+5- Under Instance type, select `t2.micro`
+6- for Key pair name, choose Create new key pair:
+    Create a new RSA key pair named `devops-kp`
+7- Under Network settings, for the selected VPC, choose the existing security group which is attached to it.
+8- To verify the added information, Review the summary of your instance configuration in the Summary panel, and Launch instance.
