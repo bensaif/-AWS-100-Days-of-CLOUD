@@ -1,0 +1,20 @@
+Exo:
+
+
+** Solution **
+Create Key Pair via AWS Management Console:
+
+1- Log into the providing crendentials.
+2- Ensure the region at the top right is set to N. Virginia (us-east-1).
+3- Search for EC2 service and open it:
+  a- In the left sidebar, scroll down to “Network & Security” → “Key Pairs”.
+  b- Click “Create key pair”.
+  c- Fill the form:
+        Name: "given name"
+        Key pair type: RSA
+        Choose the Private key file format:
+            .pem (to use SSH directly)
+            or
+            .ppk (to use PuTTY)
+   d- Click “Create key pair”.
+      The private key file will download automatically. Save it securely.
