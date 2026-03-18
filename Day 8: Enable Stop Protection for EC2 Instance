@@ -1,0 +1,12 @@
+# Exo:
+As part of the migration, there were some components added to the AWS account. 
+The team created one of the EC2 instances where they need to make some changes now.
+
+## Requirements:
+There is an EC2 instance named xfusion-ec2 under us-east-1 region, enable the stop protection for this instance
+
+# Solution:
+1-  Go to EC2 Dashboard and Click on Instances running in resource section
+2- Select `xfusion-ec2` instance and Click on Actions in the top menu, then hover over Instance settings and select Change stop protection.
+3- In the configuration dialog, check the Enable box.
+4- Save the new configuration.
