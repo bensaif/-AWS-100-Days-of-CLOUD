@@ -1,0 +1,13 @@
+# Exo:
+The Nautilus DevOps team is strategizing the migration of a portion of their infrastructure to the AWS cloud. 
+Recognizing the scale of this undertaking, they have opted to approach the migration in incremental steps rather than as a single massive transition.
+
+## Requirement:
+For this task, create one subnet named nautilus-subnet under default VPC.
+
+# Solution:
+1- Go to VPC Dashboard
+2- Click on _Subnets_ and Select the _Default VPC_
+3- Set Subnet Name as _nautilus-subnet_ and choose any availability zone.
+  **Note: This task requires choosing the correct IPv4 subnet CIDR block. You must review all existing subnets in your default VPC to ensure that the block you enter does not overlap with any existing subnet.**
+4- Click on "Create Subnet" and review
