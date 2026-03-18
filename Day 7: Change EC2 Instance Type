@@ -1,0 +1,17 @@
+# Exo:
+During the migration process, the Nautilus DevOps team created several EC2 instances in different regions. 
+They are currently in the process of identifying the correct resources and utilization and are making continuous changes to ensure optimal resource utilization. 
+Recently, they discovered that one of the EC2 instances was underutilized, prompting them to decide to change the instance type. 
+Please make sure the Status check is completed (if its still in Initializing state) before making any changes to the instance.
+
+## Requirements:
+1. Change the instance type from t2.micro to t2.nano for devops-ec2 instance.
+2. Make sure the ec2 instance devops-ec2 is in running state after the change.
+
+# Solution:
+1- Open the Amazon EC2 Dashboard. Under Resource section, choose instances
+2- Select `devops-ec2` instance and Stop it from Instance state dropdown menu.
+3- After the instance statut changed to stopped:
+  a- Click on Actions dropdown menu and choose Instance settings then Change instance type image
+  b- Choose your new instance type from t2.micro to `t2.nano`
+4- Start instance from Instance state dropdown menu and verify if it is `running` and the type is `t2.nano`
