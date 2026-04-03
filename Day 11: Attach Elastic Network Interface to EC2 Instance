@@ -1,0 +1,20 @@
+###  Exo:
+The Nautilus DevOps team has been creating a couple of services on AWS cloud. 
+They have been breaking down the migration into smaller tasks, allowing for better control, risk mitigation, and optimization of resources throughout the migration process. 
+Recently they came up with requirements mentioned below.
+
+### Requirements:
+An instance named `xfusion-ec2` and an elastic network interface named `xfusion-eni` already exists in us-east-1 region.
+
+Attach the `xfusion-eni` network interface to the `xfusion-ec2` instance.
+
+Make sure status is attached before submitting the task.
+
+### Solution:
+
+1- Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/
+2- In the navigation pane, choose Network Interfaces.
+3- Select the elastic network interface named `**xfusion-eni**`.
+4- Choose **Actions, Attach**.
+5- Choose the instance named `**xfusion-ec2**`.
+6- Choose **Attach**.
