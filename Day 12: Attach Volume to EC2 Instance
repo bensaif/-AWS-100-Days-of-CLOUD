@@ -1,0 +1,18 @@
+## Exo:
+The Nautilus DevOps team has been creating a couple of services on AWS cloud. 
+They have been breaking down the migration into smaller tasks, allowing for better control, risk mitigation, and optimization of resources throughout the migration process. 
+Recently they came up with requirements mentioned below.
+
+## Requirements:
+An instance named `xfusion-ec2` and a volume named `xfusion-volume` already exists in us-east-1 region. 
+Attach the `xfusion-volume` volume to the `xfusion-ec2` instance, 
+make sure to set the device name to `/dev/sdb` while attaching the volume.
+
+## Solution:
+1. Open the Amazon EC2 console
+2. In the navigation pane, choose **`Volumes`**.
+3. Select the volume to attach and choose **`Actions, Attach volume`**.
+4. For **`Instance`**, select the instance from the list of options.
+5. For **`Device name`**, Select the required device name `/dev/sdb
+6. Choose **`Attach volume`**.
+7. Connect to the instance and mount the volume.
